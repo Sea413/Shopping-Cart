@@ -1,7 +1,8 @@
-<li>{{product.name}}</li>
-<li>{{product.description}}</li>
-<li>{{product.price}}</li>
-  <br>
+<div class="product">
 
-
-<!-- <button {{action ‘addToCart’ product}}>Add to Cart</button> -->
+<li id='name'>{{product.name}}</li>
+<li id='desc'>{{product.description}}</li>
+<li id='price'>{{product.price}}</li>
+<button {{action 'addToCart' product}}>Add to Cart</button>
+<br>
+</div>
