@@ -1,0 +1,18 @@
+{ "products": [
+  {
+  "name": "Super Rake",
+  "description": "This is a magically wonderful rake!",
+  "price": 15
+  },
+  {
+    "name": "Shovel",
+    "description": "This was owned by shovel knight.",
+    "price": 50
+  },
+  {
+    "name": "spoon",
+    "description": "This is a silver spoon",
+    "price": 109
+  }
+]
+}
