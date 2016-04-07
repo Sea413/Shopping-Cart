@@ -1,12 +1,13 @@
 {{outlet}}
-<h2>Welcome to our Store</h2>
 
+<h2>Welcome to our Store</h2>
+<button {{action 'adminShow'}}>Admin</button>
 <ul>
-{{#each model as |product|}}
-  {{product-tile product=product}}
+{{#each model.products as |product|}}
+  {{product-tile product=product deleteProduct='deleteProduct'}}
 {{/each}}
 </ul>
 
 {{display-cart}}
 
-{{new-product save2='save3'}}
+{{new-product saveProduct="saveProduct"}}

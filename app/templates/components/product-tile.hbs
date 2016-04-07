@@ -1,7 +1,12 @@
 <div class="product">
-<li id='name'>{{#link-to 'product' product.id}}{{product.name}}{{/link-to}}</li>
-<li id='desc'>{{product.description}}</li>
-<li id='price'>{{product.price}}</li>
-<button {{action 'addToCart' product}}>Add to Cart</button>
-<br>
+  <li id='name'>{{#link-to 'product' product.id}}{{product.name}}{{/link-to}}</li>
+  <li id='desc'>{{product.description}}</li>
+  <li id='price'>{{product.price}}</li>
+  <button {{action 'addToCart' product}}>Add to Cart</button>
+  <br>
+  {{#if shoppingCart.adminShowing}}
+
+  <button {{action 'delete' product}}>Delete</button>
+  {{/if}}
 </div>
+{{log shoppingCart.adminTrue}}

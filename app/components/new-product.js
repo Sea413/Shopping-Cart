@@ -1,19 +1,23 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  addNewProduct: false,
+  shoppingCart: Ember.inject.service(),
   actions: {
     newProductFormShow(){
       this.set('addNewProduct', true);
     },
-    save1(){
+    saveProduct(){
       var params = {
         name: this.get('name'),
         description: this.get('description'),
-        price: this.get('price')
+        price: this.get('price'),
+        feedbacks: this.get('feedback')
       };
       this.set('addNewProduct', false);
-      this.sendAction('save2', params);
+      this.sendAction('saveProduct', params);
+    },
+    adminShow(){
+      this.set('isAdminShow', true);
     }
   }
 });

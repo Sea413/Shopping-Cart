@@ -1,12 +1,15 @@
+{{log isAdminShow}}
 {{#if addNewProduct}}
 <div>
   <form>
     {{input value=name placeholder="product name"}}
     {{input value=description placeholder="product description"}}
     {{input type='number' value=price placeholder="product price"}}
-    <button {{action 'save1'}}>Save</button>
+    <button {{action 'saveProduct'}}>Save</button>
   </form>
 </div>
 {{else}}
-  <button {{action 'newProductFormShow'}}>New Product</button>
+  {{#if shoppingCart.adminShowing}}
+    <button {{action 'newProductFormShow'}}>New Product</button>
+  {{/if}}
 {{/if}}

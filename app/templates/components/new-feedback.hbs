@@ -1,0 +1,20 @@
+{{#if addNewFeedback}}
+  <h1>New Answer</h1>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="username">Username</label>
+          {{input value=username id="username"}}
+        </div>
+
+        <div class="form-group">
+          <label for="content">Type your Feedback</label>
+          {{input value=content id="content"}}
+        </div>
+
+        <button {{action 'saveFeedback'}}>Save</button>
+      </form>
+    </div>
+{{else}}
+    <button {{action 'feedbackFormShow'}}>New Answer</button>
+{{/if}}

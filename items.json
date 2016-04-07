@@ -1,5 +1,4 @@
-{ "products": [
-  {
+{ "products": [{
   "name": "Super Rake",
   "description": "This is a magically wonderful rake!",
   "price": 15
@@ -13,6 +12,9 @@
     "name": "spoon",
     "description": "This is a silver spoon",
     "price": 109
-  }
-]
+  }],
+  "feedbacks": [{
+  "username": "Foucault95",
+  "content": "This product is super ok"
+}]
 }
